@@ -1,6 +1,20 @@
 
 import { createStore } from 'framework7/lite';
 
+const groupList = function(list, propertyToIndex, filter) {
+  var data = []
+  var group = null
+  filter = filter || function (item) { return item.charAt(0).toUpperCase() }
+  list.forEach(function (item) {
+    if (filter(item[propertyToIndex]) !== group) {
+      group = filter(item[propertyToIndex])
+      data.push({ groupTitle: filter(item[propertyToIndex]) })
+    }
+    data.push(item)
+  })
+  return data
+}
+
 const store = createStore({
   state: {
     contacts: [
@@ -52,7 +66,7 @@ const store = createStore({
   },
   getters: {
     contacts({ state }) {
-      return state.contacts;
+      return groupList(state.contacts, 'title');
     }
   },
   actions: {

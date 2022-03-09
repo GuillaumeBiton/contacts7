@@ -8,12 +8,16 @@
     />
     <List contactsList ul={false}>
     <ListGroup>
-      {#each contacts as contact, index }
-      <ListItem title={index} groupTitle></ListItem>
+      {#each contacts as contact }
+      {#if !contact.title}
+      <ListItem title={contact.groupTitle} groupTitle></ListItem>
+      {:else}
       <ListItem title={contact.title}></ListItem>
+      {/if}
       {/each}
     </ListGroup>
   </List>
+  {@debug contacts}
 </Page>
     
   
@@ -28,19 +32,5 @@
     useStore,
     } from 'framework7-svelte';
   
-    let contacts = useStore('contacts', (value) => (contacts = groupList(value, 'title')));
-
-    console.log(contacts);
-
-    function groupList (list, propertyToIndex, filter) {
-    var data = {}
-    filter = filter || function (item) { return item.charAt(0).toUpperCase() }
-    list.forEach(function (item) {
-      data[filter(item[propertyToIndex])] = data[filter(item[propertyToIndex])] || []
-      data[filter(item[propertyToIndex])].push(item)
-    })
-    return data
-    }
-
-    let groupedContacts = groupList(contacts, 'title');
+    let contacts = useStore('contacts', (value) => (contacts = value));
 </script>
