@@ -30,6 +30,8 @@
   
     let contacts = useStore('contacts', (value) => (contacts = groupList(value, 'title')));
 
+    console.log(contacts);
+
     function groupList (list, propertyToIndex, filter) {
     var data = {}
     filter = filter || function (item) { return item.charAt(0).toUpperCase() }
