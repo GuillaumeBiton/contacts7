@@ -1,5 +1,5 @@
 module.exports = {
-  globDirectory: 'www/',
+  globDirectory: 'docs/',
   globPatterns: ['**/*.{woff,woff2,js,css,png,jpg,svg,html}'],
   /* pass array of globs to exclude from caching */
   globIgnores: [],
