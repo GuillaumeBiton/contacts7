@@ -3,32 +3,61 @@ import { createStore } from 'framework7/lite';
 
 const store = createStore({
   state: {
-    products: [
+    contacts: [
       {
         id: '1',
-        title: 'Apple iPhone 8',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora similique reiciendis, error nesciunt vero, blanditiis pariatur dolor, minima sed sapiente rerum, dolorem corrupti hic modi praesentium unde saepe perspiciatis.'
+        title: "Aaron ",
       },
       {
         id: '2',
-        title: 'Apple iPhone 8 Plus',
-        description: 'Velit odit autem modi saepe ratione totam minus, aperiam, labore quia provident temporibus quasi est ut aliquid blanditiis beatae suscipit odio vel! Nostrum porro sunt sint eveniet maiores, dolorem itaque!'
+        title: "Abbie",
       },
       {
         id: '3',
-        title: 'Apple iPhone X',
-        description: 'Expedita sequi perferendis quod illum pariatur aliquam, alias laboriosam! Vero blanditiis placeat, mollitia necessitatibus reprehenderit. Labore dolores amet quos, accusamus earum asperiores officiis assumenda optio architecto quia neque, quae eum.'
+        title: "Adam",
+      },
+      { 
+        id: '4',
+        title: "Adele",
+      },
+      {
+        id: '5',
+        title: "Agatha",
+      },
+      {
+        id: '6',
+        title: "Agnes",
+      },
+      {
+        id: '7',
+        title: "Albert",
+      },
+      {
+        id: '8',
+        title: "Alexander"
+      },
+      {
+        id: '9',
+        title: 'Benjamin',
+      },
+      {
+        id: '10',
+        title: 'Blake',
+      },
+      {
+        id: '11',
+        title: 'Bobby',
       },
     ]
   },
   getters: {
-    products({ state }) {
-      return state.products;
+    contacts({ state }) {
+      return state.contacts;
     }
   },
   actions: {
-    addProduct({ state }, product) {
-      state.products = [...state.products, product];
+    addContact({ state }, contact) {
+      state.contacts = [...state.contacts, contact];
     },
   },
 })
