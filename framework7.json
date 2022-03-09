@@ -1,0 +1,20 @@
+{
+  "cwd": "/workspace/contacts7",
+  "type": [
+    "pwa",
+    "web"
+  ],
+  "name": "contacts7",
+  "framework": "svelte",
+  "template": "blank",
+  "cssPreProcessor": "less",
+  "bundler": "vite",
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false
+}
