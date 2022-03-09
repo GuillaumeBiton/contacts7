@@ -1,29 +1,57 @@
-<Page name="home">
-  <!-- Top Navbar -->
-  <Navbar large>
-    <NavTitle>contacts7</NavTitle>
-    <NavTitleLarge>contacts7</NavTitleLarge>
-  </Navbar>
-  <!-- Toolbar -->
-  <Toolbar bottom>
-    <Link>Left Link</Link>
-    <Link>Right Link</Link>
-  </Toolbar>
-  <!-- Page content -->
-  <Block strong>
-    <p>Here is your blank Framework7 app. Let's see what we have here.</p>
-  </Block>
-
-
+<Page>
+  <Navbar title="Contacts List"></Navbar>
+  <ListIndex
+    indexes="auto"
+    listEl=".list.contacts-list"
+    scrollList={true}
+    label={true}
+    />
+    <List contactsList ul={false}>
+    <ListGroup>
+      <ListItem title="A" groupTitle></ListItem>
+      <ListItem title="Aaron "></ListItem>
+      <ListItem title="Abbie"></ListItem>
+      <ListItem title="Adam"></ListItem>
+      <ListItem title="Adele"></ListItem>
+      <ListItem title="Agatha"></ListItem>
+      <ListItem title="Agnes"></ListItem>
+      <ListItem title="Albert"></ListItem>
+      <ListItem title="Alexander"></ListItem>
+    </ListGroup>
+    <ListGroup>
+      <ListItem title="B" groupTitle></ListItem>
+      <ListItem title="Bailey"></ListItem>
+      <ListItem title="Barclay"></ListItem>
+      <ListItem title="Bartolo"></ListItem>
+      <ListItem title="Bellamy"></ListItem>
+      <ListItem title="Belle"></ListItem>
+      <ListItem title="Benjamin"></ListItem>
+    </ListGroup>
+    <ListGroup>
+      <ListItem title="C" groupTitle></ListItem>
+      <ListItem title="Caiden"></ListItem>
+      <ListItem title="Calvin"></ListItem>
+      <ListItem title="Candy"></ListItem>
+      <ListItem title="Carl"></ListItem>
+      <ListItem title="Cherilyn"></ListItem>
+      <ListItem title="Chester"></ListItem>
+      <ListItem title="Chloe"></ListItem>
+    </ListGroup>
+    <ListGroup>
+      <ListItem title="V" groupTitle></ListItem>
+      <ListItem title="Vladimir"></ListItem>
+    </ListGroup>
+  </List>
 </Page>
+    
+  
 <script>
   import {
-    Page,
-    Navbar,
-    NavTitle,
-    NavTitleLarge,
-    Link,
-    Toolbar,
-    Block,
-  } from 'framework7-svelte';
+    Page, 
+    Navbar, 
+    List,
+    ListIndex,
+    ListGroup, 
+    ListItem
+    } from 'framework7-svelte';
 </script>
