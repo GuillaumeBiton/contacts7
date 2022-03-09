@@ -62,6 +62,70 @@ const store = createStore({
         id: '11',
         title: 'Bobby',
       },
+      {
+        id: '12',
+        title: 'Caleb',
+      },
+      {
+        id: '13',
+        title: 'Callum',
+      },
+      {
+        id: '14',
+        title: 'Cameron',
+      },
+      {
+        id: '15',
+        title: 'Charles',
+      },
+      {
+        id: '16',
+        title: 'Charlie',
+      },
+      {
+        id: '17',
+        title: 'Connor',
+      },
+      {
+        id: '18',
+        title: 'Daniel',
+      },
+      {
+        id: '19',
+        title: 'David',
+      },
+      {
+        id: '20',
+        title: 'Dexter',
+      },
+      {
+        id: '21',
+        title: 'Dylan',
+      },
+      {
+        id: '22',
+        title: 'Edward',
+      },
+      {
+        id: '23',
+        title: 'Elijah',
+      },
+      {
+        id: '24',
+        title: 'Elliot',
+      },
+      {
+        id: '25',
+        title: 'Elliott',
+      },
+      {
+        id: '26',
+        title: 'Ethan',
+      },
+      {
+        id: '27',
+        title: 'Evan',
+      },
     ]
   },
   getters: {
