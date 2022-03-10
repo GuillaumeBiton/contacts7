@@ -1,11 +1,13 @@
 <Page>
   <Navbar title="Contacts List"></Navbar>
+  {#if contact}
   <ListIndex
     indexes="auto"
     listEl=".list.contacts-list"
     scrollList={true}
     label={true}
     />
+    {/if}
     <List contactsList ul={false}>
     <ListGroup>
       {#each contacts as contact }
